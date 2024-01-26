@@ -46,7 +46,7 @@ function App() {
         </div>
       </div>
       <div className="displayer-container">
-        {numbers.map((element) => <p className="displayer">{element}</p>)}
+        {numbers.map((element, index) => <p key={index} className="displayer">{element}</p>)}
       </div>
     </div>
   );
