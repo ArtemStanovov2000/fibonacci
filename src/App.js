@@ -27,9 +27,9 @@ function App() {
 
   const countEvenNumbers = function (array) {
     let summ = 0
-    for (let i = 0; i < numbers.length; i++) {
-      if (numbers[i] % 2 === 0) {
-        summ += numbers[i]
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] % 2 === 0) {
+        summ += array[i]
       }
     }
     return summ
