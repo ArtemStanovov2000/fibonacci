@@ -1,6 +1,5 @@
 import './App.css';
 import InputWithLabel from './Components/InputWithLabel/InputWithLabel';
-import Displayer from './Components/Displayer/Displayer';
 import { useState } from 'react';
 import StateBlock from './Components/StateBlock/StateBlock';
 
@@ -26,13 +25,13 @@ function App() {
   }
 
   const countEvenNumbers = function (array) {
-    let summ = 0
+    let sum = 0
     for (let i = 0; i < array.length; i++) {
       if (array[i] % 2 === 0) {
-        summ += array[i]
+        sum += array[i]
       }
     }
-    return summ
+    return sum
   }
 
   return (
@@ -45,7 +44,7 @@ function App() {
         <StateBlock summ={countEvenNumbers(numbers)} value={countMaxValue(maxValue)} setState={setMaxValue}></StateBlock>
       </div>
       <div className="displayer-container">
-        {numbers.map((element) => <Displayer value={element}></Displayer>)}
+        {numbers.map((element) => <p className="displayer">{element}</p>)}
       </div>
     </div>
   );
