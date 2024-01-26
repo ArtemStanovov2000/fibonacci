@@ -1,6 +1,6 @@
 import '../../App.css';
 
-const InputWithLabel = ({ label, setState, state }) => {
+const NumberInputWithLabel = ({ label, setState, state }) => {
     return (
         <div className="label">
             <p className="label">{label}</p>
@@ -9,4 +9,4 @@ const InputWithLabel = ({ label, setState, state }) => {
     )
 }
 
-export default InputWithLabel
+export default NumberInputWithLabel
